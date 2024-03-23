@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "6d6bfdce-fb5b-4c61-92e0-0704049b0883",
+		"name": "PruebasIntegracion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18641346",
+		"_collection_link": "https://gold-comet-651753.postman.co/workspace/Team-Workspace~9b794c85-bdaa-4f98-89bc-cd50a7f32718/collection/18641346-6d6bfdce-fb5b-4c61-92e0-0704049b0883?action=share&source=collection_link&creator=18641346"
+	},
+	"item": [
+		{
+			"name": "Empresa-.NET",
+			"item": [
+				{
+					"name": "getPersonaPuntoNet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5045/persona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5045",
+							"path": [
+								"persona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostPersonaPuntoNet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\"codigo\":12,\"identificacion\":\"0301293882\",\"nombres\":\"Carmen Tilde\",\"apellidos\":\"Ortega Mu±oz\",\"telefono\":\"09845012323\",\"direccion\":\"Av. Americas\",\"perfilCompra\":2,\"valorCompra\":17.35}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5045/persona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5045",
+							"path": [
+								"persona"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresa-python",
+			"item": [
+				{
+					"name": "getPersonaPython",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/persona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"persona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostPersonaPython",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"codigo\": 2,\r\n        \"identificacion\": \"0301293882\",\r\n        \"nombres\": \"Pedro Andres\",\r\n        \"apellidos\": \"Tapia Peralta\",\r\n        \"telefono\": \"0192382923\",\r\n        \"direccion\": \"Chiquintad\",\r\n        \"perfilCompra\": 2,\r\n        \"valorCompra\": 12.12\r\n    } ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/persona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"persona"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresa XYZ",
+			"item": [
+				{
+					"name": "RealizaCompraGet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\": 45,\n    \"clientType\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/listarPersonClient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"listarPersonClient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RealizaCompraPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": 45,\r\n    \"identificacion\": \"0301645354\",\r\n    \"name\": \"Santiago Cordero\",\r\n    \"age\": 35,\r\n    \"email\": \"scorcar_15@hotmail.com\",\r\n    \"clientType\": 1,\r\n    \"amount\": 0.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/createPersonClient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"createPersonClient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
