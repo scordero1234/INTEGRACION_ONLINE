@@ -7,8 +7,8 @@ Se necesita una solución en linea que permita pasar los clientes de la empresa 
 ## AUTOR
 ```
 SANTIAGO DAVID CORDERO CRESPO
-Maestria en Software
- PATRONES DE INTEGRACION EMPRESARIA
+    Maestria en Software
+      PATRONES DE INTEGRACION EMPRESARIA
 Profesor: Mgs. Ing. Jorge Loja
 ```
 ### Codigo versionado
