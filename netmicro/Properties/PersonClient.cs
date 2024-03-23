@@ -3,7 +3,7 @@
 
 */
 public class PersonClient
-{   public PersonClient(int Codigo, string Identificacion, string Name, int Age, string Email, string ClientType, decimal Amount)
+{   public PersonClient(int Codigo, string Identificacion, string Name, int Age, string Email, int ClientType, decimal Amount)
     {
         this.Codigo = Codigo;
         this.Identificacion = Identificacion;
@@ -18,6 +18,6 @@ public class PersonClient
     public string Name { get; set; }
     public int Age { get; set; }
     public string Email { get; set; }
-    public string ClientType { get; set; }
+    public int ClientType { get; set; }
     public decimal Amount { get; set; }
 }

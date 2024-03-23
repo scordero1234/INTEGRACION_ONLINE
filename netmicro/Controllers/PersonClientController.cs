@@ -12,7 +12,7 @@ namespace netmicro.Controllers;
  {
     static List<PersonClient> personClients = new List<PersonClient>()
     {
-        new PersonClient(1, "0301645354", "Santiago Cordero ", 35, "", "A", 100)
+        new PersonClient(1, "0301645354", "Santiago Cordero ", 35, "", 2, 100)
     };
  
     private readonly ILogger<PersonClientController> _logger;

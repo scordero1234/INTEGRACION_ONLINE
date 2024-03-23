@@ -17,7 +17,9 @@ data = [
 
 @app.route('/clientes', methods=['GET'])
 def get_clientes():
-    return jsonify(data)
+    if(request.method == 'GET'):
+        return jsonify(data)
+     
 
 
 @app.route('/clientes/<int:codigo>', methods=['GET'])

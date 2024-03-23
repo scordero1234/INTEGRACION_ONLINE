@@ -2,5 +2,5 @@ org/apache/camel/learn/MySpringBootApplication.class
 org/apache/camel/learn/Procesador.class
 org/apache/camel/learn/BuyService.class
 org/apache/camel/learn/MySpringBean.class
-org/apache/camel/learn/Person.class
+org/apache/camel/learn/PersonClient.class
 org/apache/camel/learn/MyRouter.class

@@ -2,6 +2,7 @@ package org.apache.camel.learn;
 
 import org.apache.camel.ProducerTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,15 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class BuyService {
     @Autowired private ProducerTemplate producerTemplate;
     
-    @PostMapping("/buy")
-    public String buy(@RequestBody Person person) {
-        String result = producerTemplate.requestBody("direct:processPurchase", person).toString();
+    @GetMapping("/listarPersonClient")
+    public String buy(@RequestBody PersonClient personClient) {
+        String result = producerTemplate.requestBody("direct:listarPersonClient", personClient).toString();
         return result;
     }
 
-    @PostMapping("/createPerson")
-    public String createPerson(@RequestBody Person person) {
-        String result = producerTemplate.requestBody("direct:createPerson", person).toString();
+    @PostMapping("/createPersonClient")
+    public String createPersonClient(@RequestBody PersonClient personClient) {
+        String result = producerTemplate.requestBody("direct:createPersonClient", personClient).toString();
         return result;
     }
     
