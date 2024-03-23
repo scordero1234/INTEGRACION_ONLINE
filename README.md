@@ -4,12 +4,12 @@ Se necesita una solución en linea que permita pasar los clientes de la empresa 
 
 [Problematica a detalle](Problematica)
 
-##AUTOR
+## AUTOR
 ```
 SANTIAGO DAVID CORDERO CRESPO
 Maestria en Software
  PATRONES DE INTEGRACION EMPRESARIA
-Ing. Jorge Loja
+Profesor: Mgs. Ing. Jorge Loja
 ```
 ### Codigo versionado
 
